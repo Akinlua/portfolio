@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Akinlua</title>
+    <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/vendors/font-awesome/css/all.min.css">
+    <link href="assets/vendors/aos/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <link rel="icon" href="assets/images/niyi.JPG" type="image/png">
+    <style>
+        .edica-landing-section {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.edica-landing-section-subtitle-alt {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.service-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.service-item h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.service-item ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.service-item ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.skill {
+    flex: 1;
+    margin-right: 10px;
+    font-weight: 500;
+}
+.progress-container {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+.progress-bar {
+    height: 10px;
+    border-radius: 5px;
+}
+.percentage {
+    position: absolute;
+    right: 10px;
+    top: -20px;
+    font-size: 14px;
+    color: #666;
+}
+
+    </style>
+</head>
+<body>
+    <div class="edica-loader"></div>
+    <header class="edica-header edica-landing-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="/">Olorunfunminiyi Akinlua</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#edicaMainNav" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="edicaMainNav">
+                    <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services_skills">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services_skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </nav>
+            <div id="portfolio" class="edica-landing-header-content">
+               <div id="edicaLandingHeaderCarousel" class="carousel slide" data-ride="carousel">
+                   <div class="carousel-inner" role="listbox">
+                       <div class="carousel-item active">
+                           <div class="row">
+                               <div class="col-md-6 carousel-content-wrapper">
+                                    <h6>Top Projects</h6>
+                                   <h1>Binx AI </h1>
+                                   <p>
+                                    Binx AI is a groundbreaking WhatsApp chatbot developed by Tekcify Inc to elevate your daily communication experience. I was Responsible for the development of essential backend services, including the website. </p>
+                                   <div class="carousel-content-btns">
+                                       <a href="https://binxai.tekcify.com/" target="_blank" class="btn btn-success">Visit Site</a>
+                                    </div>
+                               </div>
+                               <div class="col-md-6 carousel-img-wrapper">
+                                   <img src="assets/images/binx (1).png" alt="carousel-img" class="img-fluid" width="350px">
+                               </div>
+                           </div>
+                       </div>
+                       <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6 carousel-content-wrapper">
+                                 <h6>Top Projects</h6>
+                                <h1>Mediic AI </h1>
+                                <p>
+                                    Mediic AI is a platform that provides patients with personalized medical advice and AI-driven support. Key features include chat and call interactions with AI, as well as audio and video appointments with doctors. I was responsible for database management, backend infrastructure, and developing part of the call systems from scratch. </p>
+                                <div class="carousel-content-btns">
+                                    <a href="https://mediic.treasureuvietobore.com/" target="_blank" class="btn btn-success">Visit Site</a>
+                                 </div>
+                            </div>
+                            <div class="col-md-6 carousel-img-wrapper">
+                                <img src="assets/images/mediic.png" alt="carousel-img" class="img-fluid" width="350px">
+                            </div>
+                        </div>
+                    </div>
+                       <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-6 carousel-content-wrapper">
+                                    <h6>Top Projects</h6>
+                                    <h1>Dido: Decentralized Donation</h1>
+                                    <p>
+                                        I contributed to Dido, a decentralized donation platform enabling users to create and request ETH donations, including support for developers and their projects. My role involved developing smart contracts and managing web3 connections. Dido was awarded first place at the BUIDLCON 2.0 Hackathon.</p>
+                                    <div class="carousel-content-btns">
+                                        <a href="https://dido.treasureuvietobore.com/" target="_blank" class="btn btn-success">Visit Site</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 carousel-img-wrapper">
+                                    <img src="assets/images/binx (2).png" alt="carousel-img" class="img-fluid" width="350px">
+                                </div>
+                            </div>
+                       </div>
+                       <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6 carousel-content-wrapper">
+                                <h6>Top Projects</h6>
+                                <h1>Auction</h1>
+                                <p>
+                                    I contributed to the development of the auction site where users can create listings for items, which are then available for other users to view and place bids on. The platform also includes a dashboard feature for users to track items they have won or sold.</p>
+                                <div class="carousel-content-btns">
+                                    <a href="https://github.com/Akinlua/GMG-Auctions" target="_blank"  class="btn btn-secondary">Visit Project</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 carousel-img-wrapper">
+                                <img src="assets/images/binx (4).png" alt="carousel-img" class="img-fluid" width="350px">
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-6 carousel-content-wrapper">
+                                    <h6>Top Projects</h6>
+                                    <h1>Rent A Property</h1>
+                                    <p>
+                                        I was involved in the development of the rental platform that allows the administrator to create new renter accounts, enabling them to maintain control. The administrator can then send login credentials to the renter, who can use the platform to make payments for various rented properties. </p>
+                                    <div class="carousel-content-btns">
+                                        <a href="https://github.com/Akinlua/property" target="_blank"  class="btn btn-secondary">Visit Project</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 carousel-img-wrapper">
+                                    <img src="assets/images/binx (3).png" alt="carousel-img" class="img-fluid" width="350px">
+                                </div>
+                            </div>
+                            </div>
+                       <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-6 carousel-content-wrapper">
+                                    <h6>Top Projects</h6>
+                                    <h1>Rent A Car</h1>
+                                    <p>
+                                        I participated in the development of a car rental platform. The administrator can post new cars on the site, and users can schedule a rental based on the availability of the cars.</p>
+                                    <div class="carousel-content-btns">
+                                        <a href="https://github.com/Akinlua/rent-car" target="_blank"  class="btn btn-secondary">Visit Project</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 carousel-img-wrapper">
+                                    <img src="assets/images/binx (5).png" alt="carousel-img" class="img-fluid" width="350px">
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+               </div> 
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="edica-landing-section edica-landing-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6" data-aos="fade-up-right">
+                        <h4 class="edica-landing-section-subtitle-alt">ABOUT ME</h4>
+                        <h2 class="edica-landing-section-title">Hello! I'm Olorunfunminiyi Akinlua</h2>
+                        <p>I am a software developer specializing in backend and web developmentears with 3yrs of experience. My passion for technology drives me to create practical solutions for real-world challenges through coding. I also have little experience in app development and a keen interest in blockchain technology.</p>
+                        <ul class="landing-about-list">
+                            <li>akinluaolorunfunminiyi@gmail.com</li>
+                            <li>+234-912-103-1921</li>
+                            <li>Nigeria</li>
+                        </ul>
+                        <div class="carousel-content-btns">
+                            <a href="/download-resume" class="btn btn-success">Download CV / Resume</a>
+                         </div>
+                    </div>
+                    
+                    <div class="col-md-6" data-aos="fade-up-left">
+                        <img src="assets/images/niyi.JPG" width="468px" alt="about" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services_skills" class="edica-landing-section edica-landing-clients">
+            <div class="container">
+                <h4 class="edica-landing-section-subtitle-alt">MY SERVICES AND SKILLS</h4>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <h4>BackEnd Development</h4>
+                        <ul>
+                            <li><span class="skill">Node.js</span> <div class="progress-container"><div class="progress-bar" style="width: 99.9%; background-color: #4caf50;"></div><span class="percentage">99.9%</span></div></li>
+                            <li><span class="skill">Nest Js</span> <div class="progress-container"><div class="progress-bar" style="width: 70%; background-color: #2196f3;"></div><span class="percentage">70%</span></div></li>
+                            <li><span class="skill">Express.js</span> <div class="progress-container"><div class="progress-bar" style="width: 99.9%; background-color: #ff9800;"></div><span class="percentage">99.9%</span></div></li>
+                            <li><span class="skill">Django</span> <div class="progress-container"><div class="progress-bar" style="width: 70%; background-color: #f44336;"></div><span class="percentage">70%</span></div></li>
+                            <li><span class="skill">MongoDB</span> <div class="progress-container"><div class="progress-bar" style="width: 95%; background-color: #9c27b0;"></div><span class="percentage">95%</span></div></li>
+                            <li><span class="skill">SQL Databases</span> <div class="progress-container"><div class="progress-bar" style="width: 80%; background-color: #3f51b5;"></div><span class="percentage">80%</span></div></li>
+                        </ul>
+                    </div>
+                    <div class="service-item">
+                        <h4>Web3 and Blockchain Development</h4>
+                        <ul>
+                            <li><span class="skill">Solidity</span> <div class="progress-container"><div class="progress-bar" style="width: 80%; background-color: #4caf50;"></div><span class="percentage">80%</span></div></li>
+                            <li><span class="skill">Ether.js</span> <div class="progress-container"><div class="progress-bar" style="width: 85%; background-color: #2196f3;"></div><span class="percentage">80%</span></div></li>
+                            <li><span class="skill">Web3.js</span> <div class="progress-container"><div class="progress-bar" style="width: 60%; background-color: #ff9800;"></div><span class="percentage">60%</span></div></li>
+                            <li><span class="skill">Rust</span> <div class="progress-container"><div class="progress-bar" style="width: 50%; background-color: #f44336;"></div><span class="percentage">50%</span></div></li>
+                            <li><span class="skill">Motoko</span> <div class="progress-container"><div class="progress-bar" style="width: 50%; background-color: #9c27b0;"></div><span class="percentage">50%</span></div></li>
+                        </ul>
+                    </div>
+                    <div class="service-item">
+                        <h4>App Development</h4>
+                        <ul>
+                            <li><span class="skill">Flutter</span> <div class="progress-container"><div class="progress-bar" style="width: 60%; background-color: #4caf50;"></div><span class="percentage">60%</span></div></li>
+                        </ul>
+                    </div>
+                    <div class="service-item">
+                        <h4>Frontend Development</h4>
+                        <ul>
+                            <li><span class="skill">HTML</span> <div class="progress-container"><div class="progress-bar" style="width: 95%; background-color: #4caf50;"></div><span class="percentage">95%</span></div></li>
+                            <li><span class="skill">CSS</span> <div class="progress-container"><div class="progress-bar" style="width:75%; background-color: #2196f3;"></div><span class="percentage">75%</span></div></li>
+                            <li><span class="skill">JavaScript</span> <div class="progress-container"><div class="progress-bar" style="width: 80%; background-color: #ff9800;"></div><span class="percentage">80%</span></div></li>
+                            <li><span class="skill">React Js</span> <div class="progress-container"><div class="progress-bar" style="width: 20%; background-color: #f44336;"></div><span class="percentage">20%</span></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="experience" class="edica-landing-section edica-landing-services">
+            <div class="container">
+                <h4 class="edica-landing-section-subtitle"></h4>
+                <h2 class="edica-landing-section-title">Experience</h2>
+                <div class="row">
+                    <div class="col-md-6 landing-service-card" data-aos="fade-right">
+                        <img src="assets/images/binxx.png" width="468px" alt="card img" class="img-fluid service-card-img">
+                        <h4 class="service-card-title">Tekcify Inc. </h4>
+                        <p class="service-card-description">
+                            I have served as a backend developer at Tekcify Inc., where I was responsible for developing essential backend services. Collaborating with team members, I contributed to the creation of high-quality applications that deliver impactful solutions to the public.</p>
+                    </div>
+                    <div class="col-md-6 landing-service-card" data-aos="fade-left">
+                        <img src="assets/images/internet.svg" alt="card img" class="img-fluid service-card-img">
+                        <h4 class="service-card-title">Omega Digital Technology Innovations</h4>
+                        <p class="service-card-description">I have worked as a backend developer at Omega Digital Technology Innovations, building fast and scalable solutions. My role involves ensuring that the backend and database structures align with user needs and company resources, promoting efficiency and scalability.</p>
+                    </div>
+                    <div class="col-md-6 landing-service-card" data-aos="fade-right">
+                        <img src="assets/images/goal.svg" alt="card img" class="img-fluid service-card-img">
+                        <h4 class="service-card-title">Freelancer</h4>
+                        <p class="service-card-description">As a freelancer, I deliver exceptional work on software-related projects, including web apps, web3, and blockchain projects. I cater to clients' needs, ensuring their projects are completed to the highest standards.</p>
+                    </div>
+                    <div class="col-md-6 landing-service-card" data-aos="fade-left">
+                        <img src="assets/images/chat-bubble.svg" alt="card img" class="img-fluid service-card-img">
+                        <h4 class="service-card-title">Hackathons</h4>
+                        <p class="service-card-description">I have participated in hackathons with teammates, which has fostered my collaboration skills and ability to quickly learn new technologies. My participation has led to winning a hackathon, providing me with valuable experience and networking opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+  
+    </main>
+    <section class="edica-footer-banner-section">
+        <div class="container">
+            <div class="footer-banner" data-aos="fade-up">
+                <h1 class="banner-title">Download My CV.</h1>
+                <div class="banner-btns-wrapper">
+                    <a class="btn btn-success" href="/download-resume"> Download CV </a>
+                    <a href="https://github.com/Akinlua" target="_blank" class="btn btn-success"> Visit Github </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="edica-footer" data-aos="fade-up">
+        <div class="container">
+            <div id="contact" class="row footer-widget-area">
+                <div class="col-md-3">
+                    <a class="navbar-brand" style="color: wheat;" href="/">Olorunfunminiyi Akinlua</a>
+
+                    <p class="contact-details">niyi@tekcify.com</p>
+                    <p class="contact-details">+234 9121 031 921</p>
+                    <nav class="footer-social-links">
+                        <a href="https://www.facebook.com/akinlua.olorunfunminiyiprecious" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/Tesals202" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/olorunfunminiyi/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/olorunfunminiyi-akinlua-7b8b37225/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-bottom-content">
+               
+                <p class="mb-0">© Tesals. 2024 <a href="/" target="_blank" rel="noopener noreferrer" class="text-reset">Home</a> . All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/vendors/popper.js/popper.min.js"></script>
+    <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/vendors/aos/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000
+        });
+      </script>
+</body>
+</html>
