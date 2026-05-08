@@ -76,7 +76,36 @@
     font-size: 14px;
     color: #666;
 }
-
+.phone-mockup {
+    width: 280px;
+    height: 580px;
+    margin: 0 auto;
+    border: 14px solid #111;
+    border-radius: 40px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+.phone-mockup::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 25px;
+    background-color: #111;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 10;
+}
+.phone-mockup img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
     </style>
 </head>
 <body>
@@ -113,9 +142,81 @@
                 </div>
             </nav>
             <div id="portfolio" class="edica-landing-header-content">
-               <div id="edicaLandingHeaderCarousel" class="carousel slide" data-ride="carousel">
+               <div id="edicaLandingHeaderCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
                    <div class="carousel-inner" role="listbox">
                        <div class="carousel-item active">
+                           <div class="row">
+                               <div class="col-md-6 carousel-content-wrapper">
+                                    <h6>Top Projects</h6>
+                                   <h1>Zitlac Location Tracker App</h1>
+                                   <p>
+                                    I built a location monitoring app that enables users to create geo-fences and track their real-time movement. It features a daily summary dashboard that breaks down the user's activity, showing the exact time spent at specific locations compared to time spent traveling. </p>
+                                   <div class="carousel-content-btns">
+                                       <a href="https://github.com/Akinlua/Zitlac" target="_blank" class="btn btn-secondary">Visit Project</a>
+                                    </div>
+                               </div>
+                               <div class="col-md-6 carousel-img-wrapper">
+                                   <div class="phone-mockup">
+                                       <img src="assets/images/zitlac.jpeg" alt="carousel-img" class="img-fluid">
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="carousel-item">
+                           <div class="row">
+                               <div class="col-md-6 carousel-content-wrapper">
+                                    <h6>Top Projects</h6>
+                                   <h1>Rydes By Mom App</h1>
+                                   <p>
+                                    I contributed to the development of a mobile transportation app that connects parents with trusted, verified drivers. The platform features dedicated dashboards for both parents and drivers, allowing users to search for rides, schedule pickup times, and coordinate securely through in-app messaging, while providing drivers with tools to manage their availability and payments. </p>
+                                   <div class="carousel-content-btns">
+                                       <a href="https://rydesbymom.com/" target="_blank" class="btn btn-success">Visit Site</a>
+                                    </div>
+                               </div>
+                               <div class="col-md-6 carousel-img-wrapper">
+                                   <div class="phone-mockup">
+                                       <img src="assets/images/rydes.jpeg" alt="carousel-img" class="img-fluid">
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="carousel-item">
+                           <div class="row">
+                               <div class="col-md-6 carousel-content-wrapper">
+                                    <h6>Top Projects</h6>
+                                   <h1>Wiki Ride-Hailing App</h1>
+                                   <p>
+                                    I contributed to the development of a dual-role ride-hailing app that connects campus riders with local drivers. The platform allows users to negotiate trip prices in real-time and includes a live interactive map dashboard to track rides from the initial request to the final destination. </p>
+                                   <div class="carousel-content-btns">
+                                       <a href="https://github.com/Akinlua/wiki-app" target="_blank" class="btn btn-secondary">Visit Project</a>
+                                    </div>
+                               </div>
+                               <div class="col-md-6 carousel-img-wrapper">
+                                   <div class="phone-mockup">
+                                       <img src="assets/images/wiki.jpeg" alt="carousel-img" class="img-fluid">
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="carousel-item">
+                           <div class="row">
+                               <div class="col-md-6 carousel-content-wrapper">
+                                    <h6>Top Projects</h6>
+                                   <h1>SYNEX (Social Hub)</h1>
+                                   <p>
+                                    I developed a unified social media application where users can seamlessly access and switch between multiple networks—including Twitter/X, Facebook, Instagram, LinkedIn, and TikTok—all from a single interface. The platform also includes state preservation to remember a user's last-visited pages and scroll positions, as well as a draggable fullscreen mode for an immersive browsing experience. </p>
+                                   <div class="carousel-content-btns">
+                                       <a href="#" class="btn btn-secondary">Visit Project</a>
+                                    </div>
+                               </div>
+                               <div class="col-md-6 carousel-img-wrapper">
+                                   <div class="phone-mockup">
+                                       <img src="assets/images/synex.jpeg" alt="carousel-img" class="img-fluid">
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="carousel-item">
                            <div class="row">
                                <div class="col-md-6 carousel-content-wrapper">
                                     <h6>Top Projects</h6>
@@ -212,6 +313,14 @@
                             </div>
                        </div>
                    </div>
+                   <a class="carousel-control-prev" href="#edicaLandingHeaderCarousel" role="button" data-slide="prev">
+                       <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #000; border-radius: 50%; padding: 15px;"></span>
+                       <span class="sr-only">Previous</span>
+                   </a>
+                   <a class="carousel-control-next" href="#edicaLandingHeaderCarousel" role="button" data-slide="next">
+                       <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #000; border-radius: 50%; padding: 15px;"></span>
+                       <span class="sr-only">Next</span>
+                   </a>
                </div> 
             </div>
         </div>
@@ -224,7 +333,7 @@
                     <div class="col-md-6" data-aos="fade-up-right">
                         <h4 class="edica-landing-section-subtitle-alt">ABOUT ME</h4>
                         <h2 class="edica-landing-section-title">Hello! I'm Olorunfunminiyi Akinlua</h2>
-                        <p>I am a software developer specializing in backend and web developmentears with 3yrs of experience. My passion for technology drives me to create practical solutions for real-world challenges through coding. I also have little experience in app development and a keen interest in blockchain technology.</p>
+                        <p>I am a software developer specializing in backend and web developmentears with 5yrs of experience. My passion for technology drives me to create practical solutions for real-world challenges through coding. I also have little experience in app development and a keen interest in blockchain technology.</p>
                         <ul class="landing-about-list">
                             <li>akinluaolorunfunminiyi@gmail.com</li>
                             <li>+234-912-103-1921</li>
@@ -268,7 +377,7 @@
                     <div class="service-item">
                         <h4>App Development</h4>
                         <ul>
-                            <li><span class="skill">Flutter</span> <div class="progress-container"><div class="progress-bar" style="width: 70%; background-color: #4caf50;"></div><span class="percentage">70%</span></div></li>
+                            <li><span class="skill">Flutter</span> <div class="progress-container"><div class="progress-bar" style="width: 90%; background-color: #4caf50;"></div><span class="percentage">90%</span></div></li>
                         </ul>
                     </div>
                     <div class="service-item">
